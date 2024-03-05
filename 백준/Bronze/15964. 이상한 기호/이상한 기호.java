@@ -5,14 +5,14 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         String[] AB = reader.readLine().split(" ");
-        int A = Integer.parseInt(AB[0]);
-        int B = Integer.parseInt(AB[1]);
+        long A = Integer.parseInt(AB[0]);
+        long B = Integer.parseInt(AB[1]);
 
-        int answer = calculateAB(A,B);
+        long answer = calculateAB(A,B);
         System.out.println(answer);
     }
     
-    public static int calculateAB (int A, int B){
+    public static long calculateAB (long A, long B){
         return (A+B)*(A-B);
     }
 }
